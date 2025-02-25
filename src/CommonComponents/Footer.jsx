@@ -104,7 +104,7 @@ const Footer = () => {
       {/* Bottom Copyright Bar */}
       <div className="bg-gradient-blue py-6">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-blue-200 mb-4 md:mb-0">&copy; 2025 Kumaon Institute of Technology & Management. All Rights Reserved.</p>
+          <p className="text-blue-200 mb-4 md:mb-0">&copy; 2025 Khatima Institute of Technology & Management. All Rights Reserved.</p>
           <div className="flex space-x-6">
             <a href="#" className="text-blue-200 hover:text-white transition-colors duration-300">Privacy Policy</a>
             <a href="#" className="text-blue-200 hover:text-white transition-colors duration-300">Terms of Service</a>
