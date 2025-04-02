@@ -8,9 +8,9 @@ const ProfileCard = () => {
         {/* Image Container */}
         <div className="md:absolute md:left-[-7rem] md:top-10 self-center md:self-auto rounded-xl h-[300px] shadow-2xl">
           <img
-            src="/Md.png"
+            src="/Md.jpg"
             alt="Mr. Kamal Bisht"
-            className="rounded-xl h-[300px] shadow-2xl object-none object-top"
+            className="rounded-xl h-[300px] shadow-2xl "
           />
         </div>
 

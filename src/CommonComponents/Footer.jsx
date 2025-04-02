@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaLinkedin, FaFacebook, FaInstagram, FaYoutube, FaMapMarkerAlt, FaPhone, FaEnvelope, FaArrowRight } from 'react-icons/fa';
 
 const Footer = () => {
@@ -15,7 +14,7 @@ const Footer = () => {
                 <span className="absolute bottom-0 left-0 w-16 h-1 bg-red-500 mt-2 -mb-3"></span>
               </h3>
               <div className="bg-white p-4 rounded-lg shadow-md inline-block mb-6">
-                <img src="/kitmLogoo.svg" alt="KITM Logo" className="h-16" />
+                <img src="/kitmLogoo.png" alt="KITM Logo" className="h-16" />
               </div>
               <p className="text-blue-100 mb-6 leading-relaxed">
                 KITM is committed to academic excellence and holistic development of students, 
@@ -25,13 +24,13 @@ const Footer = () => {
                 <a href="#" className="bg-blue-700 hover:bg-blue-600 p-3 rounded-full transition-colors duration-300">
                   <FaLinkedin />
                 </a>
-                <a href="#" className="bg-blue-700 hover:bg-blue-600 p-3 rounded-full transition-colors duration-300">
+                <a href="https://www.facebook.com/share/1Y4Sg1j52u/" className="bg-blue-700 hover:bg-blue-600 p-3 rounded-full transition-colors duration-300">
                   <FaFacebook />
                 </a>
-                <a href="#" className="bg-blue-700 hover:bg-blue-600 p-3 rounded-full transition-colors duration-300">
+                <a href="https://www.instagram.com/kitm_group_of_institutions?igsh=ZnZvNzV6anlxOTI5" className="bg-blue-700 hover:bg-blue-600 p-3 rounded-full transition-colors duration-300">
                   <FaInstagram />
                 </a>
-                <a href="#" className="bg-blue-700 hover:bg-blue-600 p-3 rounded-full transition-colors duration-300">
+                <a href="https://youtube.com/@kitmcollege?si=-r87bx3B3vd79aZG" className="bg-blue-700 hover:bg-blue-600 p-3 rounded-full transition-colors duration-300">
                   <FaYoutube />
                 </a>
               </div>
@@ -86,11 +85,11 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center p-4  transition-colors duration-300">
                   <FaPhone className="mr-3 text-red-500" />
-                  <p className="text-blue-100">+91 9568110012</p>
+                  <p className="text-blue-100">+919258351065</p>
                 </div>
                 <div className="flex items-center p-4  transition-colors duration-300">
                   <FaEnvelope className="mr-3 text-red-500" />
-                  <p className="text-blue-100">info@kitm.edu.in</p>
+                  <p className="text-blue-100">kitminfo.india@gmail.com</p>
                 </div>
               </div>
               <button className="mt-6 bg-red-600 hover:bg-red-700 transition-colors duration-300 px-6 py-3 rounded-full font-bold flex items-center">

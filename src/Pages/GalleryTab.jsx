@@ -1,76 +1,97 @@
 "use client";
-import React from "react";
+import RegistrationOpen from "../CommonComponents/RegistrationOpen";
+import HeroSection from "../CommonComponents/HeroSection";
 
 function GalleryTab() {
   return (
     <>
-      <div
-        className="object-contain w-full aspect-[4.27] flex items-center justify-center"
-        style={{
-          backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets/TEMP/3215e3f8635f4d9a9989ca06e71df46dfc36f670d4b88cdd7381439763c86db4?placeholderIfAbsent=true&apiKey=6ab1bfb1bd724a4f8d9f293aead89f51")`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <h1 className="text-6xl md:text-8xl text-white font-extrabold">
-          GALLERY
-        </h1>
-        <p className="text-lg md:text-2xl text-white font-semibold mt-2">
-          A Glimpse into Life at KITM
-        </p>
+      <HeroSection
+        title="GALLERY"
+        subtitle="A Glimpse into Life at KITM"
+        bgImage="./BannerImg.png"
+      />
+
+
+      <div className="bg-white min-h-screen">
+        {/* Header Section */}
+        <div className="max-w-7xl mx-auto px-4 py-6 md:py-12">
+
+          <section className="flex-col justify-items-center w-1161 h-95  md:py-10 pb-4">
+            <p className="text-2xl italic leading-8 text-justify md:text-center  text-black max-md:text-2xl max-sm:text-xl">
+              Welcome to the visual diary of{" "}
+              <strong className="font-bold">KITM College</strong>! Every picture
+              tells a story, and here, you'll find moments that capture the vibrant
+              energy, academic excellence, and unforgettable memories that define
+              our campus life.
+            </p>
+          </section>
+
+
+          <div className="mx-0 relative mb-16">
+            <input
+              type="text"
+              placeholder="Search here"
+              className="w-full px-6 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm"
+            />
+            <svg
+              className="absolute right-4 top-3.5 h-5 w-5 text-gray-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        {/* Gallery Grid */}
+        <div className="max-w-7xl flex   flex-col gap-4 mx-auto px-4 pb-16">
+          <div className='max-h-[900px] overflow-hidden hidden md:flex gap-4'>
+            <div className='flex justify-between flex-col'>
+              <img src="GaalleryImg/4.jpg" alt="" />
+              <img src="GaalleryImg/5.jpg" alt="" />
+            </div>
+            <div className='rounded-xl'>
+              <img src="GaalleryImg/8.jpg" alt="" className='max-h-[900px]' />
+
+            </div>
+            <div className='flex justify-between flex-col'>
+              <img src="GaalleryImg/6.jpg" alt="" />
+              <img src="GaalleryImg/7.jpg" alt="" className='max-h-[500px]' />
+
+            </div>
+          </div>
+
+          <div className="md:hidden grid grid-cols-2 gap-4 mb-4">
+            <img src="GaalleryImg/4.jpg" alt="" className="w-full h-auto object-cover rounded-lg" />
+            <img src="GaalleryImg/5.jpg" alt="" className="w-full h-full object-cover rounded-lg" />
+            <img src="GaalleryImg/8.jpg" alt="" className="w-full h-auto object-cover rounded-lg col-span-2" />
+            <img src="GaalleryImg/6.jpg" alt="" className="w-full h-full object-cover rounded-lg" />
+            <img src="GaalleryImg/7.jpg" alt="" className="w-full h-auto object-cover rounded-lg" />
+          </div>
+
+          <div>
+            <img src="GaalleryImg/9.jpg" alt="" />
+
+          </div>
+          <div className='flex md:flex-row flex-col gap-4 justify-between'>
+            <img src="GaalleryImg/1.jpg" alt="" />
+            <img src="GaalleryImg/2.jpg" alt="" />
+            <img src="GaalleryImg/3.jpg" alt="" />
+
+          </div>
+        </div>
       </div>
-      <section className="flex-col justify-items-center w-1161 h-95 px-20 py-10">
-        <p className="text-2xl italic leading-8 text-center text-black max-md:text-2xl max-sm:text-xl">
-          Welcome to the visual diary of{" "}
-          <strong className="font-bold">KITM College</strong>! Every picture
-          tells a story, and here, you'll find moments that capture the vibrant
-          energy, academic excellence, and unforgettable memories that define
-          our campus life.
-        </p>
-      </section>
+
+      <RegistrationOpen />
 
 
-      <div className="grid grid-cols-3 gap-4 p-4">
-      {/* Main large image */}
-      
-
-      {/* Top-right small image */}
-      <div>
-        <img
-          src="GalleryGlimpse1.png"
-          alt="Small view 1"
-          className="w-full h-full object-cover rounded-lg"
-        />
-      </div>
-
-      <div className="col-span-2 row-span-2">
-        <img
-          src="/GalleryGlimpse2.png"
-          alt="Main large view"
-          className="w-full h-full object-cover rounded-lg"
-        />
-      </div>
-
-      {/* Bottom-left small image */}
-      <div>
-        <img
-          src="GalleryGlimpse1.png"
-          alt="Small view 2"
-          className="w-full h-full object-cover rounded-lg"
-        />
-      </div>
-
-      {/* Bottom-right small image */}
-      <div>
-        <img
-          src="GalleryGlimpse1.png"
-          alt="Small view 3"
-          className="w-full h-full object-cover rounded-lg"
-        />
-      </div>
-    </div>
-
-      
     </>
   );
 }

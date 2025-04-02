@@ -68,7 +68,7 @@ function App() {
     <Router> {/* Ensure Router wraps everything */}
       <Navbar />
       <Routes>
-        <Route path="/" element={
+        <Route path="/home" element={
           <>
             <HeroSection />
             <StatsBar />
@@ -84,8 +84,8 @@ function App() {
           </>
         } />
         <Route path="/gallery" element={<GalleryTab />} />
-        <Route path="/life-at-kitm" element={<LifeKitm />} />
-        <Route path="/aboutkitm" element={<AboutKitm />} />
+        <Route path="/life-@kitm" element={<LifeKitm />} />
+        <Route path="/about-kitm" element={<AboutKitm />} />
         <Route path="/academics" element={<Academics />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/gallery" element={<GalleryTab />} />

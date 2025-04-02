@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import RegistrationOpen from "../CommonComponents/RegistrationOpen";
+import HeroSection from "../CommonComponents/HeroSection";
 
 function LifeKitm() {
   const sections = [
@@ -36,26 +38,16 @@ function LifeKitm() {
   ];
   return (
     <>
-      <div
-        className="object-contain w-full aspect-[4.27] flex items-center justify-center"
-        style={{
-          backgroundImage: `url("https://cdn.builder.io/api/v1/image/assets/TEMP/3215e3f8635f4d9a9989ca06e71df46dfc36f670d4b88cdd7381439763c86db4?placeholderIfAbsent=true&apiKey=6ab1bfb1bd724a4f8d9f293aead89f51")`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="text-center px-5">
-          <h1 className="text-4xl md:text-6xl lg:text-8xl text-white font-extrabold">
-            LIFE @KITM
-          </h1>
-          <p className="text-lg md:text-3xl lg:text-4xl text-white font-semibold mt-2">
-            A Glimpse into Life at KITM
-          </p>
-        </div>
-      </div>
+       <HeroSection
+                title="LIFE"
+                subtitle="A Glimpse into Life at KITM"
+                bgImage="./BannerImg.png"
+                spanC='block text-[#EEFD18] font-bold'
+                span='@KITM'
+            />
 
       <section className="w-full">
-        <p className="px-5 sm:px-10 md:px-20 py-10 sm:py-16 text-2xl sm:text-3xl md:text-4xl italic leading-8 sm:leading-9 md:leading-10 text-center text-black">
+        <p className="px-5 sm:px-10 md:px-20 py-10 sm:py-16 text-2xl sm:text-3xl md:text-4xl italic leading-8 sm:leading-9 md:leading-10 text-justify md:text-center text-black">
           Peek into the heart of our college - from bustling hallways to serene
           study spots, this is where growth and learning blend seamlessly.
         </p>
@@ -100,25 +92,7 @@ function LifeKitm() {
         </h2>
       </div>
 
-      <div className="flex justify-center py-20">
-        <div
-          className="object-contain w-full max-w-[1374px] h-[200px] md:h-[319px] flex items-center justify-center"
-          style={{
-            backgroundImage: `url('/Footer.png')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="text-center">
-            <h1 className="text-xl md:text-6xl lg:text-8xl text-white font-extrabold">
-              REGISTRATION OPEN 2025
-            </h1>
-            <button className="bg-red-500 text-white font-bold px-4 py-2 md:px-6 md:py-3 text-sm md:text-lg rounded-full my-4">
-              APPLY NOW
-            </button>
-          </div>
-        </div>
-      </div>
+      <RegistrationOpen/>
     </>
   );
 }
